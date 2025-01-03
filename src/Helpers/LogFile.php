@@ -6,6 +6,8 @@ use Stepanenko3\LaravelLogViewer\Events\LogFileDeleted;
 
 class LogFile
 {
+    public $sizeFormatted;
+    
     public function __construct(
         public string $name,
         public string $path,
